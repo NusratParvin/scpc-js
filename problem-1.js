@@ -4,13 +4,13 @@
 
 let outputString = ''
 
-function reverseString(str){
-
-    for (let i= str.length-1; i>=0;i--){
-        outputString += str[i]
+const reverseString = (str) => {
+    let outputString = '';
+    for (let i = str.length - 1; i >= 0; i--) {
+        outputString += str[i];
     }
     console.log(outputString);
-}
+};
 
 const inputString = "hello world"
 reverseString(inputString)
